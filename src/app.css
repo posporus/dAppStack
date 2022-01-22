@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1, h2, h3, h4 {
+    @apply font-bold;
+  }
+}
+body {
+    background: linear-gradient(0deg, #FC466B 0%, #3F5EFB 100%);
+}
