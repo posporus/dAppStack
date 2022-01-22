@@ -11,8 +11,10 @@
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "migrate": "truffle --config truffle-config.cjs migrate",
     "compile": "truffle --config truffle-config.cjs compile",
+    "test": "truffle --config truffle-config.cjs test",
     "generate-types": "npx typechain --target=truffle-v5 'build/contracts/*.json'",
-    "postinstall": "npx truffle --config truffle-config.cjs compile && npm run generate-types"
+    "postinstall": "npx truffle --config truffle-config.cjs compile && npm run generate-types",
+    "types": "npm run postinstall"
   },
   "devDependencies": {
     "@openzeppelin/contracts": "^4.4.1",
