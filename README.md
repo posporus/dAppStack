@@ -2,7 +2,7 @@
 Base project for developing dAapps.
 
 ## Stack:
-- [x] Svelte
+- [x] Sveltekit
 - [x] Truffle
 - [x] Web3js
 - [x] Tailwind
@@ -11,9 +11,9 @@ Base project for developing dAapps.
 
 ## Installation
 
-1. `git clone https://github.com/posporus/dAppStack.git`
-
-2. `yarn`
+1. `git clone https://github.com/posporus/dAppStack.git my-funky-dapp`
+2. `cd my-funky-dapp`
+3. `yarn`
 
 ## Interacting with Truffle
 #### Compile
