@@ -1,7 +1,6 @@
 {
   "name": "truffle-sveltekit-base",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "scripts": {
     "dev": "svelte-kit dev",
@@ -13,7 +12,7 @@
     "migrate": "truffle --config truffle-config.cjs migrate",
     "compile": "truffle --config truffle-config.cjs compile",
     "generate-types": "npx typechain --target=truffle-v5 'build/contracts/*.json'",
-    "postinstall": "npx truffle compile && npm run generate-types"
+    "postinstall": "npx truffle --config truffle-config.cjs compile && npm run generate-types"
   },
   "devDependencies": {
     "@openzeppelin/contracts": "^4.4.1",
